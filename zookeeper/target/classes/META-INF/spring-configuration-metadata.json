@@ -1,0 +1,25 @@
+{
+  "groups": [
+    {
+      "name": "zookeeper",
+      "type": "com.wdw.study.config.ZookeeperProperties",
+      "sourceType": "com.wdw.study.config.ZookeeperProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "zookeeper.address",
+      "type": "java.lang.String",
+      "description": "服务端地址信息  127.0.0.1:2181",
+      "sourceType": "com.wdw.study.config.ZookeeperProperties"
+    },
+    {
+      "name": "zookeeper.timeout",
+      "type": "java.lang.Integer",
+      "description": "超时时间  毫秒",
+      "sourceType": "com.wdw.study.config.ZookeeperProperties",
+      "defaultValue": 0
+    }
+  ],
+  "hints": []
+}

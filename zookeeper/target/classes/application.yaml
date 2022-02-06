@@ -1,0 +1,11 @@
+server:
+  port: 8040
+
+# 自己关于zookeeper的配置信息
+zookeeper:
+  address: 127.0.0.1:2181
+  timeout: 4000
+
+
+logging:
+  config: classpath:logback-spring.xml
