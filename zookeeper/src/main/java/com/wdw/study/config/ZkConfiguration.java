@@ -4,6 +4,7 @@ import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.retry.RetryNTimes;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,6 +15,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @EnableConfigurationProperties(CuratorConf.class)
+@ConditionalOnProperty(prefix = "client",name="type",havingValue = "curator")
 public class ZkConfiguration {
     @Autowired
     private CuratorConf curatorConf;
@@ -22,7 +24,7 @@ public class ZkConfiguration {
      * 这里会自动调用一次start，请勿重复调用
      * 然后会创建会话
      */
-    @Bean(initMethod = "start")
+    @Bean(initMethod = "start",name = "curatorFramework")
     public CuratorFramework curatorFramework() {
         return CuratorFrameworkFactory.newClient(
                 curatorConf.getConnectString(),

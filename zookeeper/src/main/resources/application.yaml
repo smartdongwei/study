@@ -2,9 +2,18 @@ server:
   port: 8040
 
 # 自己关于zookeeper的配置信息
+client:
+  type: curator
 zookeeper:
   address: 127.0.0.1:2181
   timeout: 4000
+curator:
+  # zookeeper 地址
+  connectString: 127.0.0.1:2181
+  retryCount: 3 # 重试次数
+  elapsedTimeMs: 2000 # 重试间隔时间
+  sessionTimeoutMs: 60000 # session超时时间
+  connectionTimeoutMs: 10000 # 连接超时时间
 
 
 logging:

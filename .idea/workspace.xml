@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b61f795e-e26a-48e4-8b29-df7aeace2606" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/config/CuratorConf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/config/WatcherApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/config/ZkConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/service/ZkClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/service/CuratorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zookeeper/src/test/java/com/wdw/study/service/CuratorServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/ZkClientStudy.java" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/ZkClientStudy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/config/CuratorConf.java" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/config/CuratorConf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/config/ZkConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/config/ZkConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/config/ZookeeperClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/config/ZookeeperClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/config/ZookeeperProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/config/ZookeeperProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/service/ZkClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/service/ZkClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/target/classes/com/wdw/study/config/ZookeeperClient$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper/target/classes/com/wdw/study/config/ZookeeperClient$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/target/classes/com/wdw/study/config/ZookeeperClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper/target/classes/com/wdw/study/config/ZookeeperClient.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +26,7 @@
       <list>
         <option value="Kotlin File" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -53,15 +57,39 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../synway_work/trunk20210521/DataGovernaceServer" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.wdw.study.service" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\study\ideaProjects\study\zookeeper\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CuratorServiceTest.testInterProcessSemaphoreV22">
+    <configuration name="CuratorServiceTest.testInterProcessSemaphoreV22" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="zookeeper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wdw.study.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wdw.study.service" />
+      <option name="MAIN_CLASS_NAME" value="com.wdw.study.service.CuratorServiceTest" />
+      <option name="METHOD_NAME" value="testInterProcessSemaphoreV22" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Zookeeper" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="zookeeper" />
       <extension name="coverage">
@@ -77,6 +105,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CuratorServiceTest.testInterProcessSemaphoreV22" />
         <item itemvalue="Spring Boot.Zookeeper" />
       </list>
     </recent_temporary>
@@ -93,6 +122,7 @@
       <updated>1644076741594</updated>
       <workItem from="1644076744262" duration="11769000" />
       <workItem from="1644206053376" duration="3223000" />
+      <workItem from="1644225779644" duration="4203000" />
     </task>
     <servers />
   </component>
@@ -108,54 +138,54 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="501" y="216" key="FileChooserDialogImpl/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644077196918" />
-    <state width="1397" height="213" key="GridCell.Tab.0.bottom" timestamp="1644167921945">
+    <state width="1397" height="303" key="GridCell.Tab.0.bottom" timestamp="1644245618637">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="213" key="GridCell.Tab.0.bottom/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644167921945" />
-    <state width="1397" height="213" key="GridCell.Tab.0.center" timestamp="1644167921944">
+    <state width="1397" height="303" key="GridCell.Tab.0.bottom/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644245618637" />
+    <state width="1397" height="303" key="GridCell.Tab.0.center" timestamp="1644245618637">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="213" key="GridCell.Tab.0.center/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644167921944" />
-    <state width="1397" height="213" key="GridCell.Tab.0.left" timestamp="1644167921944">
+    <state width="1397" height="303" key="GridCell.Tab.0.center/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644245618637" />
+    <state width="1397" height="303" key="GridCell.Tab.0.left" timestamp="1644245618637">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="213" key="GridCell.Tab.0.left/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644167921944" />
-    <state width="1397" height="213" key="GridCell.Tab.0.right" timestamp="1644167921945">
+    <state width="1397" height="303" key="GridCell.Tab.0.left/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644245618637" />
+    <state width="1397" height="303" key="GridCell.Tab.0.right" timestamp="1644245618637">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="213" key="GridCell.Tab.0.right/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644167921945" />
-    <state width="1397" height="213" key="GridCell.Tab.1.bottom" timestamp="1644167921945">
+    <state width="1397" height="303" key="GridCell.Tab.0.right/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644245618637" />
+    <state width="1397" height="303" key="GridCell.Tab.1.bottom" timestamp="1644245613078">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="213" key="GridCell.Tab.1.bottom/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644167921945" />
-    <state width="1397" height="213" key="GridCell.Tab.1.center" timestamp="1644167921945">
+    <state width="1397" height="303" key="GridCell.Tab.1.bottom/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644245613078" />
+    <state width="1397" height="303" key="GridCell.Tab.1.center" timestamp="1644245613078">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="213" key="GridCell.Tab.1.center/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644167921945" />
-    <state width="1397" height="213" key="GridCell.Tab.1.left" timestamp="1644167921945">
+    <state width="1397" height="303" key="GridCell.Tab.1.center/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644245613078" />
+    <state width="1397" height="303" key="GridCell.Tab.1.left" timestamp="1644245613078">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="213" key="GridCell.Tab.1.left/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644167921945" />
-    <state width="1397" height="213" key="GridCell.Tab.1.right" timestamp="1644167921945">
+    <state width="1397" height="303" key="GridCell.Tab.1.left/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644245613078" />
+    <state width="1397" height="303" key="GridCell.Tab.1.right" timestamp="1644245613078">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="213" key="GridCell.Tab.1.right/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644167921945" />
-    <state width="1397" height="213" key="GridCell.Tab.2.bottom" timestamp="1644167921945">
+    <state width="1397" height="303" key="GridCell.Tab.1.right/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644245613078" />
+    <state width="1397" height="303" key="GridCell.Tab.2.bottom" timestamp="1644245609596">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="213" key="GridCell.Tab.2.bottom/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644167921945" />
-    <state width="1397" height="213" key="GridCell.Tab.2.center" timestamp="1644167921945">
+    <state width="1397" height="303" key="GridCell.Tab.2.bottom/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644245609596" />
+    <state width="1397" height="303" key="GridCell.Tab.2.center" timestamp="1644245609596">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="213" key="GridCell.Tab.2.center/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644167921945" />
-    <state width="1397" height="213" key="GridCell.Tab.2.left" timestamp="1644167921945">
+    <state width="1397" height="303" key="GridCell.Tab.2.center/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644245609596" />
+    <state width="1397" height="303" key="GridCell.Tab.2.left" timestamp="1644245609596">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="213" key="GridCell.Tab.2.left/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644167921945" />
-    <state width="1397" height="213" key="GridCell.Tab.2.right" timestamp="1644167921945">
+    <state width="1397" height="303" key="GridCell.Tab.2.left/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644245609596" />
+    <state width="1397" height="303" key="GridCell.Tab.2.right" timestamp="1644245609596">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="213" key="GridCell.Tab.2.right/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644167921945" />
+    <state width="1397" height="303" key="GridCell.Tab.2.right/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644245609596" />
     <state x="251" y="116" key="Maven.ArtifactSearchDialog" timestamp="1644078845506">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
@@ -164,10 +194,14 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="222" y="103" key="SettingsEditor/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644078882109" />
-    <state x="405" y="285" key="com.intellij.ide.util.TipDialog" timestamp="1644206095109">
+    <state x="405" y="285" key="com.intellij.ide.util.TipDialog" timestamp="1644225781757">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="405" y="285" key="com.intellij.ide.util.TipDialog/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644206095109" />
+    <state x="405" y="285" key="com.intellij.ide.util.TipDialog/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644225781757" />
+    <state x="492" y="179" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1644244587469">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="492" y="179" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644244587469" />
     <state x="108" y="155" key="new project wizard" timestamp="1644076787136">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
@@ -178,8 +212,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/config/ZookeeperClient.java</url>
-          <line>33</line>
+          <line>36</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/config/ZkConfiguration.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

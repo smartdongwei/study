@@ -1,2 +1,6 @@
 
 *.log
+*.class
+*.class
+zookeeper/target/classes/META-INF/spring-configuration-metadata.json
+*.class
