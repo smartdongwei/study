@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b61f795e-e26a-48e4-8b29-df7aeace2606" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/service/CuratorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zookeeper/src/test/java/com/wdw/study/service/CuratorServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/config/CuratorConf.java" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/config/CuratorConf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/config/ZkConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/config/ZkConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/config/ZookeeperClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/config/ZookeeperClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/config/ZookeeperProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/config/ZookeeperProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/service/ZkClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/service/ZkClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper/target/classes/com/wdw/study/config/ZookeeperClient$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper/target/classes/com/wdw/study/config/ZookeeperClient$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper/target/classes/com/wdw/study/config/ZookeeperClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeper/target/classes/com/wdw/study/config/ZookeeperClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/target/classes/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/target/classes/com/wdw/study/ZkClientStudy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/target/classes/com/wdw/study/Zookeeper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/target/classes/com/wdw/study/config/ZookeeperClient$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/target/classes/com/wdw/study/config/ZookeeperClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/target/classes/com/wdw/study/config/ZookeeperProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/target/classes/logback-spring.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +117,7 @@
       <updated>1644076741594</updated>
       <workItem from="1644076744262" duration="11769000" />
       <workItem from="1644206053376" duration="3223000" />
-      <workItem from="1644225779644" duration="4203000" />
+      <workItem from="1644225779644" duration="4545000" />
     </task>
     <servers />
   </component>
@@ -216,9 +211,9 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/zookeeper/src/main/java/com/wdw/study/config/ZkConfiguration.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/zookeeper/src/test/java/com/wdw/study/service/CuratorServiceTest.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
