@@ -15,7 +15,7 @@ public class ZookeeperProperties {
      */
     private String address;
     /**
-     * 超时时间  毫秒
+     * 超时时间  秒
      */
     private int timeout;
 

@@ -25,6 +25,10 @@ public class ZookeeperClient {
     @Autowired
     private ZookeeperProperties properties;
 
+    /**
+     * 原生的 zk客户端
+     * @return
+     */
     @Bean(name = "zkClient")
     public ZooKeeper zkClient(){
         ZooKeeper zooKeeper=null;
