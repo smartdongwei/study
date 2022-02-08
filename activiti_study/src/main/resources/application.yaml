@@ -82,5 +82,7 @@ mybatis:
 #日志文件配置
 logging:
   config: classpath:logback-spring.xml
+  level:
+    org.activiti.engine.impl.persistence.entity: trace
 
 
