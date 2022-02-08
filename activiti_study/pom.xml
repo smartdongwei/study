@@ -12,7 +12,56 @@
     <groupId>com.wdw</groupId>
     <artifactId>activiti_study</artifactId>
     <version>V1.0.20220228</version>
+    <properties>
+        <activiti.version>7.1.0.M6</activiti.version>
+        <activiti.modeler.version>5.23.0</activiti.modeler.version>
+    </properties>
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+
+        <!--   springSecurity 依赖   -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <!-- mysql  -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <!--引入activiti的springboot启动器 -->
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-spring-boot-starter</artifactId>
+            <version>${activiti.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.activiti/activiti-image-generator -->
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-image-generator</artifactId>
+            <version>${activiti.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-modeler</artifactId>
+            <version>${activiti.modeler.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-diagram-rest</artifactId>
+            <version>${activiti.modeler.version}</version>
+        </dependency>
+<!--        druid 连接池依赖-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>1.2.8</version>
+        </dependency>
+
         <dependency>
             <groupId>com.wdw</groupId>
             <artifactId>common_util</artifactId>
@@ -29,6 +78,9 @@
 <!--                    <include>com/synway/datarelation/dao/**/mapper/**/*.xml</include>-->
 <!--                </includes>-->
 <!--            </resource>-->
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
             <resource>
                 <directory>src/main/resources</directory>
                 <includes>
