@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>study</artifactId>
+        <groupId>org.example</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.wdw</groupId>
+    <artifactId>activiti_study</artifactId>
+    <version>V1.0.20220228</version>
+    <dependencies>
+        <dependency>
+            <groupId>com.wdw</groupId>
+            <artifactId>common_util</artifactId>
+            <version>v.1.0</version>
+        </dependency>
+    </dependencies>
+
+
+    <build>
+        <resources>
+<!--            <resource>-->
+<!--                <directory>src/main/java</directory>-->
+<!--                <includes>-->
+<!--                    <include>com/synway/datarelation/dao/**/mapper/**/*.xml</include>-->
+<!--                </includes>-->
+<!--            </resource>-->
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>logback-spring.xml</include>
+                    <include>*.xml</include>
+                    <!-- 如果各个环境的jks都是一样，则可以直接打入到启动jar包中 -->
+                </includes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <targetPath>config</targetPath>
+                <includes>
+                    <include>*.properties</include>
+                    <include>*.yml</include>
+                    <include>**/*.yaml</include>
+                </includes>
+            </resource>
+            <!-- 过滤脚本文件到bin目录 -->
+            <resource>
+                <directory>src/main/resources/bin</directory>
+                <filtering>true</filtering>
+                <targetPath>bin</targetPath>
+                <includes>
+                    <include>*.bat</include>
+                    <include>*.sh</include>
+                </includes>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <layout>ZIP</layout>
+                    <includes>
+                        <!-- 项目启动jar包中排除依赖包 -->
+                        <include>
+                            <groupId>non-exists</groupId>
+                            <artifactId>non-exists</artifactId>
+                        </include>
+                    </includes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
+                            <useUniqueVersions>false</useUniqueVersions>
+                            <mainClass>com.wdw.study.ActivitiStudy</mainClass>
+                        </manifest>
+                    </archive>
+                    <!-- 配置不需要打进jar的文件，建议把日志配置文件打进jar中 -->
+                    <excludes>
+                        <exclude>config/**</exclude>
+                        <exclude>bin/**</exclude>
+                        <exclude>assembly.xml</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>target/lib</outputDirectory>
+                            <overWriteReleases>false</overWriteReleases>
+                            <overWriteSnapshots>false</overWriteSnapshots>
+                            <overWriteIfNewer>true</overWriteIfNewer>
+                            <includeScope>compile</includeScope>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- 配置assembly插件信息 -->
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <finalName>${artifactId}</finalName><!--修改（2）-->
+                    <descriptors> <!--assembly配置文件路径,把assembly.xml文件放在/resources/目录下 -->
+                        <descriptor>src/main/resources/assembly.xml</descriptor>
+                    </descriptors>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase><!-- 绑定到package生命周期阶段上 -->
+                        <goals>
+                            <goal>single</goal>
+                        </goals><!-- 只运行一次 -->
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+</project>

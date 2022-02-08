@@ -2,14 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b61f795e-e26a-48e4-8b29-df7aeace2606" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/zookeeper/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper/target/classes/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper/target/classes/com/wdw/study/ZkClientStudy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper/target/classes/com/wdw/study/Zookeeper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper/target/classes/com/wdw/study/config/ZookeeperClient$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper/target/classes/com/wdw/study/config/ZookeeperClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper/target/classes/com/wdw/study/config/ZookeeperProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper/target/classes/logback-spring.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/activiti_study/activiti_study.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activiti_study/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activiti_study/src/main/java/com/wdw/study/ActivitiStudy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activiti_study/src/main/java/com/wdw/study/interceptor/GlobalInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activiti_study/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activiti_study/src/main/resources/assembly.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activiti_study/src/main/resources/bin/shutdown.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activiti_study/src/main/resources/bin/start.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common_util/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common_util/src/main/java/com/wdw/study/common/util/ExceptionUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common_util/src/main/java/com/wdw/study/common/util/ValidatorUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -37,13 +44,16 @@
     </option>
   </component>
   <component name="ProjectId" id="24hJAUr9clTEbQS35aMGNJ4mHp5" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -54,7 +64,10 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../synway_work/trunk20210521/DataGovernaceServer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/activiti_study/src/main/resources" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -65,10 +78,27 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\study\ideaProjects\study\activiti_study\src\main\resources" />
       <recent name="E:\study\ideaProjects\study\zookeeper\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CuratorServiceTest.testInterProcessSemaphoreV22">
+  <component name="RunManager" selected="Spring Boot.ActivitiStudy">
+    <configuration name="CuratorServiceTest.testInterProcessSemaphoreV2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="zookeeper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wdw.study.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wdw.study.service" />
+      <option name="MAIN_CLASS_NAME" value="com.wdw.study.service.CuratorServiceTest" />
+      <option name="METHOD_NAME" value="testInterProcessSemaphoreV2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CuratorServiceTest.testInterProcessSemaphoreV22" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="zookeeper" />
       <extension name="coverage">
@@ -81,6 +111,13 @@
       <option name="MAIN_CLASS_NAME" value="com.wdw.study.service.CuratorServiceTest" />
       <option name="METHOD_NAME" value="testInterProcessSemaphoreV22" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ActivitiStudy" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="activiti_study" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wdw.study.ActivitiStudy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -100,6 +137,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CuratorServiceTest.testInterProcessSemaphoreV2" />
         <item itemvalue="JUnit.CuratorServiceTest.testInterProcessSemaphoreV22" />
         <item itemvalue="Spring Boot.Zookeeper" />
       </list>
@@ -117,54 +155,66 @@
       <updated>1644076741594</updated>
       <workItem from="1644076744262" duration="11769000" />
       <workItem from="1644206053376" duration="3223000" />
-      <workItem from="1644225779644" duration="4545000" />
+      <workItem from="1644225779644" duration="5555000" />
+      <workItem from="1644284962262" duration="2172000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="526" y="170" key="#com.intellij.ide.util.MemberChooser" timestamp="1644165896247">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="526" y="170" key="#com.intellij.ide.util.MemberChooser/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644165896247" />
-    <state x="501" y="216" key="FileChooserDialogImpl" timestamp="1644077196918">
+    <state x="501" y="216" key="FileChooserDialogImpl" timestamp="1644285221501">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="501" y="216" key="FileChooserDialogImpl/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644077196918" />
-    <state width="1397" height="303" key="GridCell.Tab.0.bottom" timestamp="1644245618637">
+    <state x="501" y="216" key="FileChooserDialogImpl/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644285221501" />
+    <state width="1397" height="203" key="GridCell.Tab.0.bottom" timestamp="1644287162661">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="303" key="GridCell.Tab.0.bottom/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644245618637" />
-    <state width="1397" height="303" key="GridCell.Tab.0.center" timestamp="1644245618637">
+    <state width="1397" height="203" key="GridCell.Tab.0.bottom/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644287162661" />
+    <state width="1397" height="203" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1644246856988" />
+    <state width="1397" height="203" key="GridCell.Tab.0.center" timestamp="1644287162661">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="303" key="GridCell.Tab.0.center/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644245618637" />
-    <state width="1397" height="303" key="GridCell.Tab.0.left" timestamp="1644245618637">
+    <state width="1397" height="203" key="GridCell.Tab.0.center/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644287162661" />
+    <state width="1397" height="203" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1644246856987" />
+    <state width="1397" height="203" key="GridCell.Tab.0.left" timestamp="1644287162661">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="303" key="GridCell.Tab.0.left/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644245618637" />
-    <state width="1397" height="303" key="GridCell.Tab.0.right" timestamp="1644245618637">
+    <state width="1397" height="203" key="GridCell.Tab.0.left/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644287162661" />
+    <state width="1397" height="203" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1644246856987" />
+    <state width="1397" height="203" key="GridCell.Tab.0.right" timestamp="1644287162661">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="303" key="GridCell.Tab.0.right/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644245618637" />
-    <state width="1397" height="303" key="GridCell.Tab.1.bottom" timestamp="1644245613078">
+    <state width="1397" height="203" key="GridCell.Tab.0.right/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644287162661" />
+    <state width="1397" height="203" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1644246856988" />
+    <state width="1397" height="203" key="GridCell.Tab.1.bottom" timestamp="1644286884808">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="303" key="GridCell.Tab.1.bottom/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644245613078" />
-    <state width="1397" height="303" key="GridCell.Tab.1.center" timestamp="1644245613078">
+    <state width="1397" height="203" key="GridCell.Tab.1.bottom/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644286884808" />
+    <state width="1397" height="203" key="GridCell.Tab.1.bottom/0.0.1440.920@0.0.1440.920" timestamp="1644246856979" />
+    <state width="1397" height="203" key="GridCell.Tab.1.center" timestamp="1644286884808">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="303" key="GridCell.Tab.1.center/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644245613078" />
-    <state width="1397" height="303" key="GridCell.Tab.1.left" timestamp="1644245613078">
+    <state width="1397" height="203" key="GridCell.Tab.1.center/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644286884808" />
+    <state width="1397" height="203" key="GridCell.Tab.1.center/0.0.1440.920@0.0.1440.920" timestamp="1644246856979" />
+    <state width="1397" height="203" key="GridCell.Tab.1.left" timestamp="1644286884808">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="303" key="GridCell.Tab.1.left/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644245613078" />
-    <state width="1397" height="303" key="GridCell.Tab.1.right" timestamp="1644245613078">
+    <state width="1397" height="203" key="GridCell.Tab.1.left/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644286884808" />
+    <state width="1397" height="203" key="GridCell.Tab.1.left/0.0.1440.920@0.0.1440.920" timestamp="1644246856979" />
+    <state width="1397" height="203" key="GridCell.Tab.1.right" timestamp="1644286884808">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="303" key="GridCell.Tab.1.right/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644245613078" />
+    <state width="1397" height="203" key="GridCell.Tab.1.right/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644286884808" />
+    <state width="1397" height="203" key="GridCell.Tab.1.right/0.0.1440.920@0.0.1440.920" timestamp="1644246856979" />
     <state width="1397" height="303" key="GridCell.Tab.2.bottom" timestamp="1644245609596">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
@@ -185,22 +235,22 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="251" y="116" key="Maven.ArtifactSearchDialog/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644078845506" />
-    <state x="222" y="103" key="SettingsEditor" timestamp="1644078882109">
+    <state x="222" y="70" key="SettingsEditor" timestamp="1644285382429">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="222" y="103" key="SettingsEditor/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644078882109" />
-    <state x="405" y="285" key="com.intellij.ide.util.TipDialog" timestamp="1644225781757">
+    <state x="222" y="70" key="SettingsEditor/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644285382429" />
+    <state x="405" y="285" key="com.intellij.ide.util.TipDialog" timestamp="1644284963660">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="405" y="285" key="com.intellij.ide.util.TipDialog/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644225781757" />
+    <state x="405" y="285" key="com.intellij.ide.util.TipDialog/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644284963659" />
     <state x="492" y="179" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1644244587469">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="492" y="179" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644244587469" />
-    <state x="108" y="155" key="new project wizard" timestamp="1644076787136">
+    <state x="108" y="155" key="new project wizard" timestamp="1644286555240">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="108" y="155" key="new project wizard/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644076787136" />
+    <state x="108" y="155" key="new project wizard/0.0.1440.920/-1920.0.1920.1040@0.0.1440.920" timestamp="1644286555240" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
